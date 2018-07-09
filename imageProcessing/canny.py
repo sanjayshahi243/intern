@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 img = cv2.imread('sample.jpg',1)
 rimg = cv2.resize(img, (720,480))
-edges = cv2.Canny(img,10,200)
+edges = cv2.Canny(img,200,250)
 redges = cv2.resize(edges, (720,480))
 
 cv2.imshow('original', rimg)
